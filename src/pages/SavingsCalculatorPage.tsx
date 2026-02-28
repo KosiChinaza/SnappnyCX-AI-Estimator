@@ -1,4 +1,4 @@
-"use client"; // remove this line if not using Next.js App Router
+
 
 import { useState } from "react";
 import Header from "../components/Header";
@@ -8,7 +8,10 @@ import type { SavingsData } from "../components/SavingsResults";
 import AIInsight from "../components/AIInsight";
 import CTAFooter from "../components/ctaFooter";
 
-// Outsourcing cost ratio by country (approximate)
+/*
+ * Add to tailwind.config.ts → theme.extend:
+ */
+
 const COUNTRY_RATIO: Record<string, number> = {
   "United States": 0.30,
   "United Kingdom": 0.32,
@@ -37,7 +40,7 @@ export default function SavingsCalculatorPage() {
     const numHires = hires || 1;
     const ratio = COUNTRY_RATIO[country] ?? 0.30;
 
-    const annualLocal = monthlySalary * 12 * numHires * 1.3; // +30% overhead
+    const annualLocal = monthlySalary * 12 * numHires * 1.3;
     const outsourcedCost = annualLocal * ratio;
     const annualSavings = annualLocal - outsourcedCost;
     const monthlySavings = annualSavings / 12;
@@ -47,32 +50,28 @@ export default function SavingsCalculatorPage() {
   };
 
   return (
-    /*
-     * Tailwind keyframe for fade-slide-in animation.
-     */
-    <main className="min-h-screen bg-gray-100 flex items-center justify-center p-5 font-[Nunito,sans-serif]">
-      <div className="bg-white rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.10)] w-full max-w-115 p-6 sm:p-8">
+    // Mobile (<lg): full-screen white, no card styling
+    // Desktop (lg+): gray bg, centered floating card with shadow
+    <main className="min-h-screen flex flex-col bg-white lg:bg-gray-100 lg:items-center lg:justify-center lg:p-8">
+      <div className="
+        flex flex-col flex-1 w-full bg-white px-6 py-10
+        lg:flex-none lg:min-h-0 lg:max-w-[480px] lg:rounded-2xl lg:px-8 lg:py-8
+        lg:shadow-[0_8px_40px_rgba(0,0,0,0.10)]
+      ">
         <Header />
-
         <CalculatorForm
-          role={role}
-          setRole={setRole}
-          country={country}
-          setCountry={setCountry}
-          salary={salary}
-          setSalary={setSalary}
-          hires={hires}
-          setHires={setHires}
+          role={role} setRole={setRole}
+          country={country} setCountry={setCountry}
+          salary={salary} setSalary={setSalary}
+          hires={hires} setHires={setHires}
           onCalculate={handleCalculate}
         />
-
         {showResults && results && (
           <>
             <SavingsResults results={results} visible={showResults} />
             <AIInsight results={results} visible={showResults} />
           </>
         )}
-
         <CTAFooter />
       </div>
     </main>
