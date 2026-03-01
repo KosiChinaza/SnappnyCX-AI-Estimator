@@ -47,7 +47,7 @@ Open your browser at http://localhost:5173
 
 ## 🌐 Live Demo 
 
-View Live on Vercel.com
+View Live on https://snappny-cx-ai-estimator.vercel.app/
 
 ## 💡 How It Works
 
