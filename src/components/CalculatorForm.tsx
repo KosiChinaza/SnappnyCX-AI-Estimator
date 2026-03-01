@@ -100,7 +100,7 @@ export default function CalculatorForm({
       <button
         onClick={onCalculate}
         className="w-full py-4 rounded-2xl text-white font-extrabold text-base tracking-wide
-          bg-gradient-to-r from-[#FF6B35] to-[#FF9A3C]
+          bg-linear-to-r from-[#FF6B35] to-[#FF9A3C]
           shadow-[0_4px_20px_rgba(255,107,53,0.4)]
           hover:shadow-[0_6px_28px_rgba(255,107,53,0.5)]
           hover:-translate-y-0.5 active:translate-y-0

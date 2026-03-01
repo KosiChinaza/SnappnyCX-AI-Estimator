@@ -13,7 +13,7 @@ export default function AIInsight({ results, visible }: AIInsightProps) {
   return (
     <div className="bg-orange-50 border border-orange-100 rounded-2xl p-4 mb-8 animate-[fadeSlideIn_0.4s_ease]">
       <div className="flex items-center gap-2 mb-2">
-        <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+        <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center shrink-0">
           <span className="text-base leading-none">💡</span>
         </div>
         <span className="text-sm font-extrabold text-gray-900">AI Insight</span>
