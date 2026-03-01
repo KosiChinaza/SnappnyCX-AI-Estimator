@@ -1,7 +1,7 @@
 
 # SnappyCX AI Outsourcing Estimator
 
-## Instantly visualize how much your company could save by outsourcing talent.##
+Instantly visualize how much your company could save by outsourcing talent.
 
 ## 🚀 Project Overview
 
@@ -12,14 +12,14 @@ It allows companies to estimate potential savings by outsourcing roles to Snappy
 - Instantly calculate local vs outsourced cost.
 - AI-driven insights suggest where companies could optimize.
 
-## Purpose:##  
+## Purpose:  
 Demonstrates how AI + frontend development can improve customer conversion and engagement for SnappyCX.
 
 ## 🛠 Technologies Used
 
-- ## React + TypeScript ##
-- ## TailwindCSS v4 ## 
-- ## Vite ##
+-  React + TypeScript 
+-  TailwindCSS v4 
+-  Vite 
 - Responsive mobile-first design
 - AI insights (example integration with Claude/ChatGPT)
 
