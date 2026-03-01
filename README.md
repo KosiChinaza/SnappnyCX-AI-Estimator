@@ -43,4 +43,25 @@ npm install
 # Run locally
 npm run dev
 Open your browser at http://localhost:5173
+```
+
+## 🌐 Live Demo 
+
+View Live on Vercel.com
+
+## 💡 How It Works
+
+- User selects role, country, monthly salary, and number of hires.
+- System calculates:
+      - Local annual cost
+      - Outsourced cost via SnappyCX global talent ratio
+      - Annual and monthly savings
+      - AI insight suggests additional optimization.
+
+## 📈 Potential Future Enhancements
+
+- Integrate directly with SnappyCX backend
+- More AI-driven recommendations
+- Add multi-role/team calculations
+- User authentication for saving estimates
 
