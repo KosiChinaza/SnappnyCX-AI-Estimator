@@ -55,7 +55,7 @@ export default function SavingsCalculatorPage() {
     <main className="min-h-screen flex flex-col bg-white lg:bg-gray-100 lg:items-center lg:justify-center lg:p-8">
       <div className="
         flex flex-col flex-1 w-full bg-white px-6 py-10
-        lg:flex-none lg:min-h-0 lg:max-w-[480px] lg:rounded-2xl lg:px-8 lg:py-8
+        lg:flex-none lg:min-h-0 lg:max-w-120 lg:rounded-2xl lg:px-8 lg:py-8
         lg:shadow-[0_8px_40px_rgba(0,0,0,0.10)]
       ">
         <Header />
